@@ -1,3 +1,21 @@
+/* Delte After Adding Contact in About,course and contact senction */
+.universal-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.universal-heading h1{
+  font-size: 50px;
+  font-weight: 700;
+  
+
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
