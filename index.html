@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CourseCraft.com</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
     <nav class="navbar">
-        <div class="logo">CourseCraft</div>
+        <div class="logo"><i class="fa-solid fa-graduation-cap"></i>CourseCraft</div>
 
         <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
@@ -19,196 +23,386 @@
             <li><a href="about.html">About</a></li>
             <li><a href="course.html">Courses</a></li>
             <li><a href="contactus.html">Contact</a></li>
+
+
         </ul>
 
         <div class="nav-icons">
-            <button class="login-btn">Login</button>
-            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn"> <a href="loginpage.html">login</a></button>
+            <button class="signup-btn"><a href="loginpage.html">Sign Up</a></button>
+            <button id="darkbtn"> <i class="fa-regular fa-moon"></i></button>
+           
         </div>
     </nav>
-    <div class="container">
-        <div class="left">
-            <h1>CourseCraft Learning Management System</h1>
 
-            <p class="paragraph">
-                Discover the Ghost LMS Theme, a modern and versatile solution for
-                creating and managing online courses. Featuring a clean design,
-                customizable layouts, and user-friendly navigation
-            </p>
-            <div>
-                <button class="contactus">Contact Us</button>
-                <button class="viewcourses">View Courses</button>
+
+   <section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="badge">
+                <span class="check-icon">✓</span> Most trusted education platform
+            </div>
+            <h1>Grow your skills and advance career</h1>
+            <p>Start, switch, or advance your career with more than 5,000 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+            
+            <div class="hero-btns">
+                <a href="#" class="btn-primary">Join Free Now</a>
+                <a href="#" class="btn-video">
+                    <span class="play-icon">▶</span> Watch Demo
+                </a>
             </div>
         </div>
 
-        <div class="right">
-            <img src="img1.jpg" alt="noo" />
+        <div class="hero-image">
+            <img src="images/header iamge.png" alt="Education Illustration">
         </div>
     </div>
-    <div>
+</section>
+
+<!-- icon section Start Here-->
+ 
+<section class="statssection">
+    <div class="statcontainer">
+
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <h2>316,000+</h2>
+            <p>Qualified Instructors</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h2>1.8 Billion+</h2>
+            <p>Course Enrolments</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-tv"></i>
+            </div>
+            <h2>41,000+</h2>
+            <p>Courses in 42 Languages</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <h2>179,000+</h2>
+            <p>Online Videos</p>
+        </div>
+
+    </div>
+</section>
+
+ <!-- Icon sectio End Here -->
+
+
+
+
+
+
+
+
         <h1 class="popular">Popular Topics</h1>
-        <div class="container2">
-            <div class="slider-track">
-                <div class="items">
-                    <img src="markiting.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Markiting</h2>
-                    </a>
-                </div>
+        </div>
 
-                <div class="items">
-                    <img src="programing.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Programming</h2>
-                    </a>
-                </div>
+        <!-- Slider -->
 
-                <div class="items">
-                    <img src="bussiness.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Bussines Analysis</h2>
-                    </a>
-                </div>
+       <div class="slider">
+  <div class="slides">
 
-                <div class="items">
-                    <img src="datascience.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Data Science</h2>
-                    </a>
-                </div>
+    <div class="slide">
+      <img src="images/programing.jpeg" alt="">
+      <h3>Programing Fundamentals</h3>
+    </div>
 
-                <div class="items">
-                    <img src="tech.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Digital Skill</h2>
-                    </a>
-                </div>
+    <div class="slide">
+      <img src="images/social.jpg" alt="">
+      <h3>Social Media</h3>
+    </div>
 
-                <div class="items">
-                    <img src="machine.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Machine Learning</h2>
-                    </a>
-                </div>
+    <div class="slide">
+      <img src="images/datascience.jpeg" alt="">
+      <h3>Data Science</h3>
+    </div>
 
-                <div class="items">
-                    <img src="cyber.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Cyber Security</h2>
-                    </a>
-                </div>
+    <div class="slide">
+      <img src="images/cyber.jpg" alt="">
+      <h3>Cyber Security</h3>
+    </div>
 
-                <div class="items">
-                    <img src="social.jpeg" alt="Loading...." />
-                    <a href="">
-                        <h2>Social Media</h2>
-                    </a>
-                </div>
+    <div class="slide">
+      <img src="images/bussiness.jpeg" alt="">
+      <h3>Business Development</h3>
+    </div>
+
+    <div class="slide">
+      <img src="images/tech.jpeg" alt="">
+      <h3>Mobile App Development</h3>
+    </div>
+
+    <div class="slide">
+      <img src="images/markiting.jpeg" alt="">
+      <h3>Marketing Management</h3>
+    </div>
+
+    <div class="slide">
+      <img src="images/machine.webp" alt="">
+      <h3>Machine Learning</h3>
+    </div>
+
+  </div>
+</div>
+
+
+<div>
+    <h1 class="course-grid-heading">Our Courses</h1>
+</div>
+
+
+<div class="course-grid">
+
+    <!-- JavaScript -->
+    <div class="course-card">
+        <div class="card-header js">
+            <img src="images/course-javascript.jpg" alt="JavaScript">
+        </div>
+        <div class="card-body">
+            <span class="badge intermediate">Intermediate</span>
+            <h3 class="card-title">How to easily create a website with JavaScript</h3>
+            <p class="author">By: Claire Evans</p>
+            <div class="rating">★★★★★ 4.5 (9,300)</div>
+            <div class="card-footer">
+                <span class="price">$39.00</span>
+                <a href="#" class="enroll"><i class="fa-solid fa-cart-shopping"></i> Get Enrolled</a>
             </div>
         </div>
-        <div class="courses">
-            <h1>Courses</h1>
-        </div>
-        <div class="container3">
-            <div class="con3-sec1">
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-            </div>
-            <div class="con3-sec2"></div>
-            <div class="con3-sec3"></div>
-        </div>
+    </div>
 
-
-        <div class="courseflex">
-            <div class="coursesection">
-                <div class="coursesec1 coursesec">
-                    <img src="course-img-1.jpeg" alt="">
-                    <h4>Entrepreneurship & Innovation</h4>
-                    <p>Discover the 'Entrepreneurship and Innovation' course, designed to equip you with the essential
-                        skills.</p>
-                </div>
-                <div class="coursesec2 coursesec">
-                    <img src="course-img-2.jpeg" alt="">
-                    <h4>Data Analytics Techniques for 2025
-                    </h4>
-                    <p>Master data analytics with our 'Data Analytics Techniques' course. Learn essential techniques for
-                        analyzing and interpreting data.</p>
-                </div>
-                <div class="coursesec3 coursesec">
-                    <img src="course-img-3.jpeg" alt="">
-                    <h4>Statistical Analysis for Data Science</h4>
-                    <p>Learn the core principles of user interface (UI) and user experience (UX) design. This course
-                        covers design basics, user research.</p>
-                </div>
-                <div class="coursesec4 coursesec">
-                    <img src="course-img-4.jpeg" alt="">
-                    <h4>Social Media Mastery</h4>
-                    <p>Master social media with strategies to enhance your brand's presence, engage your audience, and drive results</p>
-                </div>
-                <div class="coursesec5 coursesec">
-                    <img src="course-img-5.jpeg" alt="">
-                    <h4>Integrated Marketing Tactics</h4>
-                    <p>Learn how to harmonize online and offline marketing efforts to create a cohesive strategy that drives success.</p>
-                </div>
-                <div class="coursesec6 coursesec">
-                    <img src="course-img-6.jpeg" alt="">
-                    <h4>Advanced C++ Concepts</h4>
-                    <p>Dive into advanced C++ programming topics, including memory management, templates, and concurrency, to enhance your skills.</p>
-                </div>
+    <!-- CSS -->
+    <div class="course-card">
+        <div class="card-header css">
+            <img src="images/course-css.jpg" alt="CSS">
+        </div>
+        <div class="card-body">
+            <span class="badge beginner">Beginner</span>
+            <h3 class="card-title">CSS: ultimate CSS course from beginner to</h3>
+            <p class="author">By: Carolyn Welborn</p>
+            <div class="rating">★★★★★ 4.5 (8,890)</div>
+            <div class="card-footer">
+                <span class="price">$30.00</span>
+                <a href="#" class="enroll"><i class="fa-solid fa-cart-shopping"></i> Get Enrolled</a>
             </div>
         </div>
+    </div>
+
+    <!-- Gatsby -->
+    <div class="course-card">
+        <div class="card-header gatsby">
+            <img src="images/course-gatsby.jpg" alt="Gatsby">
+        </div>
+        <div class="card-body">
+            <span class="badge intermediate">Intermediate</span>
+            <h3 class="card-title">The Gatsby Course: build web application</h3>
+            <p class="author">By: Floyd Amall</p>
+            <div class="rating">★★★★★ 4.5 (13,245)</div>
+            <div class="card-footer">
+                <span class="price">$34.00</span>
+                <a href="#" class="enroll"><i class="fa-solid fa-cart-shopping"></i> Get Enrolled</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WordPress -->
+    <div class="course-card">
+        <div class="card-header wp">
+            <img src="images/course-wordpress.jpg" alt="WordPress">
+        </div>
+        <div class="card-body">
+            <span class="badge advance">Advance</span>
+            <h3 class="card-title">WordPress: introduction to wordpress for beginners</h3>
+            <p class="author">By: Victor Elliott</p>
+            <div class="rating">★★★★★ 4.5 (9,300)</div>
+            <div class="card-footer">
+                <span class="price">$39.00</span>
+                <a href="#" class="enroll"><i class="fa-solid fa-cart-shopping"></i> Get Enrolled</a>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+   
+
+  <section class="herolast">
+    <div class="hero-container-last">
+
+
+      <!-- Left: Image -->
+      <div class="hero-image-last">
+        <img src="images/instructor.png" alt="Smiling instructor" />
+          <span class=""><i class="fa-solid icon-last money fa-dollar-sign"></i></span>
+        <span class=""><i class="fa-brands icon-last growth fa-bitcoin"></i></span>
+
+      </div>
+
+
+
+      <!-- Right: Content -->
+      <div class="hero-content-last">
+        <h1>Become an instructor today</h1>
+        <p>
+          Instructors from around the world teach millions of students on
+          Geeks. We provide the tools and skills to teach what you love.
+        </p>
+        <button class="cta-btn-last">Start Teaching Today</button>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
 
     <div>
       <h1 class="mentorsectionheading">Our Mentors</h1>
     </div>
-    <div class="mentorsection">
-        <div class="mentor-div-1 mentor-div">
 
-        </div>
-        <div class="mentor-div-2 mentor-div">
 
-        </div>
-        <div class="mentor-div-3 mentor-div">
+   
 
-        </div>
-        <div class="mentor-div-4 mentor-div">
 
-        </div>
 
+
+<section class="team-section">
+  <div class="team-card">
+    <div class="team-card-header">
+      <img src="images/mentor-pic-3.jpg" alt="David Dell" class="team-avatar">
     </div>
+    <div class="team-card-body">
+      <h3 class="team-name">David Dell</h3>
+      <p class="team-desc">
+        The lorem text the section that contains header with having open functionality.
+        Lorem dolor sit amet consectetur adipisicing elit.
+      </p>
+      <button class="team-btn">View More</button>
+    </div>
+  </div>
 
-        <footer class="footer">
-            <div class="footersection1">
-                <h1 class="footerlogo">CourseCraft</h1>
-                <p class="footerpara">
-                    Discover the Ghost LMS Theme, a modern and versatile solution for
-                    creating and managing online courses. Featuring a clean design,
-                    customizable layouts, and user-friendly navigation.
-                </p>
-            </div>
-            <div class="footersection2">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footersection3">
-                <h4>Email :- <br>coursecraft@gmail.com</h4>
-                <h4>Phone :- <br>+923001234567</h4>
-                <h4>Address :- <br>Hell Gate No 2 Nowhere</h4>
-            </div>
-        </footer>
+  <div class="team-card">
+    <div class="team-card-header">
+      <img src="images/mentor-pic-4.jpg" alt="Rose Bush" class="team-avatar">
+    </div>
+    <div class="team-card-body">
+      <h3 class="team-name">Rose Bush</h3>
+      <p class="team-desc">
+        The lorem text the section that contains header with having open functionality.
+        Lorem dolor sit amet consectetur adipisicing elit.
+      </p>
+      <button class="team-btn">View More</button>
+    </div>
+  </div>
 
+  <div class="team-card">
+    <div class="team-card-header">
+      <img src="images/mentor-pic-1.jpg" alt="Jones Gail" class="team-avatar">
+    </div>
+    <div class="team-card-body">
+      <h3 class="team-name">Jones Gail</h3>
+      <p class="team-desc">
+        The lorem text the section that contains header with having open functionality.
+        Lorem dolor sit amet consectetur adipisicing elit.
+      </p>
+      <button class="team-btn">View More</button>
+    </div>
+  </div>
+    <div class="team-card">
+    <div class="team-card-header">
+      <img src="images/mentor-pic-1.jpg" alt="Jones Gail" class="team-avatar">
+    </div>
+    <div class="team-card-body">
+      <h3 class="team-name">Jones Gail</h3>
+      <p class="team-desc">
+        The lorem text the section that contains header with having open functionality.
+        Lorem dolor sit amet consectetur adipisicing elit.
+      </p>
+      <button class="team-btn">View More</button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div id="footer"></div>
+    
+
+       
         <script>
+
+       //Dark Mode Toggle
+       const darkbtn= document.getElementById("darkbtn");
+       darkbtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+        document.querySelector(".fa-moon").classList.toggle("dark");
+
+       
+       })
+
+
             const menuToggle = document.getElementById("menu-toggle");
             const navLinks = document.getElementById("nav-links");
 
             menuToggle.addEventListener("click", () => {
                 navLinks.classList.toggle("active");
             });
+
+  const slides = document.querySelector(".slides");
+  const slideItems = document.querySelectorAll(".slide");
+
+  let index = 0;
+  const totalSlides = slideItems.length;
+
+  function autoSlide() {
+    index++;
+
+    if (index >= totalSlides) {
+      index = 0;
+    }
+
+    slides.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // Change slide every 3 seconds
+  setInterval(autoSlide, 3000);
+
+    fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
         </script>
 </body>
 

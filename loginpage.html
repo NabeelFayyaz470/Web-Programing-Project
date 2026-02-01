@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CourseCraft | Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #7d5fff, #194b78);
+        }
+
+        .auth-container {
+            background: #ffffff;
+            width: 450px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+       
+
+        .auth-container p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-box i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px 12px 12px 38px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .input-box input:focus {
+            outline: none;
+            border-color: #1c7ed6;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #7d5fff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+       button a{
+        text-decoration: none;
+        color: white;
+       }
+        button:hover {
+            background: #7d5fff;
+        }
+
+        .toggle-text {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .toggle-text span {
+            color: #7d5fff;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        #signup {
+            display: none;
+        }
+        .logohead{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .logohead h1{
+            color: #7d5fff;
+            font-size: 34px;
+        }
+        .fa-solid{
+            color: #7d5fff;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="auth-container">
+
+    <!-- LOGIN -->
+    <div id="login">
+       <div class="logohead"><i class="fa-solid fa-graduation-cap"></i> <h1>CourseCraft</h1></div>
+        <p>Login to your account</p>
+
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button><a href="index.html">Login</a></button>
+
+        <div class="toggle-text">
+            Don’t have an account? <span onclick="showSignup()">Sign Up</span>
+        </div>
+    </div>
+
+    <!-- SIGN UP -->
+    <div id="signup">
+ <div class="logohead"><i class="fa-solid fa-graduation-cap"></i> <h1>CourseCraft</h1></div>        <p>Create a new account</p>
+
+        <div class="input-box">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Full Name">
+        </div>
+
+        <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Email">
+        </div>
+
+        <div class="input-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button><a href="index.html">Sign Up</a></button>
+
+        <div class="toggle-text">
+            Already have an account? <span onclick="showLogin()">Login</span>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function showSignup() {
+        document.getElementById("login").style.display = "none";
+        document.getElementById("signup").style.display = "block";
+    }
+
+    function showLogin() {
+        document.getElementById("signup").style.display = "none";
+        document.getElementById("login").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
